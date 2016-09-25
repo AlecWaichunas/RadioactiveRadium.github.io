@@ -1,3 +1,4 @@
+console.log("Hello");
 var tabs = [
             [$("#about_tab"), "about.html"],
             [$("#projects_tab"), "contact.html"],
@@ -7,16 +8,9 @@ var tabs = [
 
 var $content = $("#content");
 
-$.get("about.html", function(data){
-    alert(data);
-});
-
-$(document).ready(function(){
-    $(".profile_pic").on("click", function(e){
-        e.preventDefault();
-        $content.load('about.html', function(){
-            alert("loaded");
-        });
+$(document).ready(function(){;
+    $content.load('about.html', function(){
+        alert("loaded");
     });
 });
 
